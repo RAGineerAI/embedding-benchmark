@@ -1,0 +1,62 @@
+[
+    {
+        "id": "q1",
+        "query": "Какая сумма договора поставки серверного оборудования?",
+        "relevant_doc": "contract_2024_001.txt",
+        "expected_answer": "5 000 000 рублей"
+    },
+    {
+        "id": "q2",
+        "query": "Кто основные должники компании?",
+        "relevant_doc": "accounting_note_2024.txt",
+        "expected_answer": "ООО СтройМонтаж и ООО ТоргСервис"
+    },
+    {
+        "id": "q3",
+        "query": "Сколько нужно инвестиций на AI-проект?",
+        "relevant_doc": "investment_memo_2024.txt",
+        "expected_answer": "50 000 000 рублей"
+    },
+    {
+        "id": "q4",
+        "query": "Какая чистая прибыль за 1 квартал?",
+        "relevant_doc": "accounting_note_2024.txt",
+        "expected_answer": "6 500 000 рублей"
+    },
+    {
+        "id": "q5",
+        "query": "Сколько заплатили налогов за полгода?",
+        "relevant_doc": "cash_flow_2024.txt",
+        "expected_answer": "5 200 000 рублей"
+    },
+    {
+        "id": "q6",
+        "query": "Какая сумма дебиторской задолженности?",
+        "relevant_doc": "accounting_note_2024.txt",
+        "expected_answer": "8 200 000 рублей"
+    },
+    {
+        "id": "q7",
+        "query": "Сколько человек в команде AI-проекта?",
+        "relevant_doc": "investment_memo_2024.txt",
+        "expected_answer": "12 человек"
+    },
+    {
+        "id": "q8",
+        "query": "Какой остаток денежных средств на конец периода?",
+        "relevant_doc": "cash_flow_2024.txt",
+        "expected_answer": "3 800 000 рублей"
+    },
+    {
+        "id": "q9",
+        "query": "Кто исполнитель по акту выполненных работ?",
+        "relevant_doc": "act_2024_003.txt",
+        "expected_answer": "ООО АйТиСервис"
+    },
+    {
+        "id": "q10",
+        "query": "Какая пеня за просрочку по договору поставки?",
+        "relevant_doc": "contract_2024_001.txt",
+        "expected_answer": "0.1% от суммы договора за каждый день"
+    }
+]
