@@ -15,24 +15,25 @@ def print_results_table(results: List[Dict[str, Any]]) -> None:
     """
     Печатает таблицу с результатами в консоль.
     """
-    print(f"\n{'='*70}")
+    print(f"\n{'='*80}")
     print("РЕЗУЛЬТАТЫ БЕНЧМАРКА")
-    print(f"{'='*70}")
+    print(f"{'='*80}")
 
     header = (
-        f"{'Модель':<25} "
+        f"{'Модель':<20} "
+        f"{'Метод':<10} "
         f"{'Recall@1':>10} "
         f"{'Recall@5':>10} "
         f"{'MRR':>10} "
         f"{'Время(сек)':>12}"
     )
-
     print(header)
-    print("-" * 70)
+    print("-" * 80)
 
     for r in results:
         row = (
-            f"{r['model']:<25} "
+            f"{r['model']:<20} "
+            f"{r.get('method', '-'):<10} "
             f"{r.get('recall_at_1', 0):>10.4f} "
             f"{r.get('recall_at_5', 0):>10.4f} "
             f"{r.get('mrr', 0):>10.4f} "
@@ -40,7 +41,7 @@ def print_results_table(results: List[Dict[str, Any]]) -> None:
         )
         print(row)
 
-    print(f"{'='*70}\n")
+    print(f"{'='*80}\n")
 
 def save_results(results: List[Dict[str, Any]], file_path: Path) -> None:
     """
